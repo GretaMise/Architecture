@@ -1,0 +1,248 @@
+* {
+  font-family: "Inter";
+  width: 100%;
+  color: #32292f;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.grey {
+  color: grey;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul,
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a,
+footer a {
+  color: black;
+  padding-left: 8px;
+}
+nav .fa-search,
+footer .fa-search {
+  color: black;
+}
+nav .nav-link,
+footer .nav-link {
+  padding: 0;
+  text-decoration: underline;
+}
+nav .policy,
+footer .policy {
+  display: flex;
+  align-items: flex-start;
+}
+nav .policy ul,
+footer .policy ul {
+  flex-direction: column;
+}
+nav .policy ul li,
+footer .policy ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav div,
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-fluid .main-s {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center;
+}
+.container-fluid .main-s .content {
+  background: #f6f4f5;
+  z-index: 1;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 180px;
+  position: relative;
+  width: 650px;
+  height: 500px;
+  flex: 0 0 auto;
+  max-width: 100%;
+  justify-content: center;
+}
+.container-fluid .main-s .content .content-1 {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+}
+.container-fluid .main-s .content .button {
+  background-color: #32292f;
+  width: 150px;
+  padding: 12px 24px 12px 24px;
+}
+.container-fluid .main-s .content .button a {
+  color: white;
+  text-decoration: none;
+}
+.container-fluid .main-s .image-container {
+  z-index: 2;
+  position: relative;
+  width: 550px;
+  height: 400px;
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+}
+.container-fluid .main-s .image-container .image-1 {
+  position: relative;
+  left: -60px;
+  z-index: 2;
+  width: 550px;
+  margin-right: auto;
+}
+.container-fluid .main-s .image-container .image-1 img {
+  width: 100%;
+  height: auto;
+}
+.container-fluid .main-s .image-container .image-2 {
+  width: 250px;
+  position: absolute;
+  right: 0;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.middle-s .container-fluid {
+  padding-bottom: 60px;
+}
+.middle-s .text {
+  align-items: center;
+  justify-content: center;
+}
+.middle-s button {
+  background-color: white;
+  width: 150px;
+  padding: 15px 5px;
+}
+.middle-s button a {
+  color: black;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper .one {
+  grid-column: 1/5;
+}
+.wrapper .two {
+  grid-column: 5/7;
+}
+.wrapper .three {
+  grid-column: 1/4;
+}
+.wrapper .four {
+  grid-column: 4/7;
+}
+.wrapper img {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .nav ul {
+    display: none;
+  }
+  .container-fluid .main-s .content {
+    background: none;
+  }
+  .main-s {
+    display: flex;
+    flex-direction: column;
+    background: hidden;
+    height: 790px;
+    background: #f6f4f5;
+  }
+  .main-s .content {
+    order: 2;
+    margin: 20px 0 0;
+  }
+  .main-s .content .content-1 {
+    margin-top: -80px;
+  }
+  .main-s .image-container {
+    order: 1;
+    width: 450px;
+    height: 400px;
+  }
+  .middle-s .row img {
+    width: 450px;
+    height: 400px;
+  }
+  .middle-s .row .need-img-1 {
+    padding-top: 10px;
+  }
+  .middle-s .row .need-img-2 {
+    order: -1;
+  }
+  .middle-s .row .need-img-3 {
+    order: -1;
+    margin-top: -20px;
+  }
+  .middle-s .row .need-img-4 {
+    padding-top: 10px;
+  }
+  .wrapper {
+    display: block;
+  }
+  .wrapper img {
+    width: 450px;
+    height: 400px;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  footer ul li {
+    padding-top: 10px;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .policy {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
